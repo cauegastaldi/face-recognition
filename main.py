@@ -8,28 +8,13 @@ def reconhecimento_facial():
 
     caue_image = face_recognition.load_image_file("faces/caue.jpeg")
     caue_face_encoding = face_recognition.face_encodings(caue_image)[0]
-
-    danilo_image = face_recognition.load_image_file("faces/danilo.jpeg")
-    danilo_face_encoding = face_recognition.face_encodings(danilo_image)[0]
-
-    mauricio_image = face_recognition.load_image_file("faces/mauricio.jpeg")
-    mauricio_face_encoding = face_recognition.face_encodings(mauricio_image)[0]
-
-    isa_image = face_recognition.load_image_file("faces/isa.jpeg")
-    isa_face_encoding = face_recognition.face_encodings(isa_image)[0]
-
+    
     known_face_encodings = [
         caue_face_encoding,
-        danilo_face_encoding,
-        mauricio_face_encoding,
-        isa_face_encoding
     ]
 
     known_face_names = [
         "Caue",
-        "Danilo",
-        "Mauricio",
-        "Isabela"
     ]
 
     while True:
